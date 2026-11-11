@@ -5,5 +5,5 @@ resources:
 - manifests/service.yaml
 images:
 - name: PROJECT/IMAGE
-  newName: node
-  newTag: "20"
+  newName: hupratt/dwk1
+  newTag: 3a18bed7c4e5490fb858c3ace1acb280d9d77740
