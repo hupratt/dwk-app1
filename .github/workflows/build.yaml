@@ -21,8 +21,8 @@ jobs:
       # tag image with the GitHub SHA to get a unique tag 
       - name: Build and publish backend
         run: |-
-          docker build --tag "mluukkai/dwk1:$GITHUB_SHA" .
-          docker push "mluukkai/dwk1:$GITHUB_SHA"
+          docker build --tag "hupratt/dwk1:$GITHUB_SHA" .
+          docker push "hupratt/dwk1:$GITHUB_SHA"
 
       - name: Set up Kustomize
         uses: imranismail/setup-kustomize@v3
