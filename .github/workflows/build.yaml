@@ -28,7 +28,7 @@ jobs:
         uses: imranismail/setup-kustomize@v3
 
       - name: Use right image
-        run: kustomize edit set image PROJECT/IMAGE=mluukkai/dwk1:$GITHUB_SHA
+        run: kustomize edit set image PROJECT/IMAGE=hupratt/dwk1:$GITHUB_SHA
 
       - name: commit kustomization.yaml to GitHub
         uses: EndBug/add-and-commit@v10
