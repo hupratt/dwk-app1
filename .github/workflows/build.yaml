@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # tag image with the GitHub SHA to get a unique tag
+      # tag image with the GitHub SHA to get a unique tag 
       - name: Build and publish backend
         run: |-
           docker build --tag "mluukkai/dwk1:$GITHUB_SHA" .
